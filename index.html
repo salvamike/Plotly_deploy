@@ -5,58 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Belly Button Biodiversity</title>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link 
+  rel ="stylesheet" 
+  href="static/css/style.css">
 </head>
 
 <body>
 
   <div class="container">
-    <div class="row bg-dark">
-      <div class="col-md-12 jumbotron text-center white-text" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d5/E._coli_Bacteria_%2816578744517%29.jpg)">
-        <h1 class="white-text">Belly Button Biodiversity Dashboard</h1>
-        <p class="white-text">Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
     <div class="row">
-      <div class="col-md-12 text-center white-text">
-        <h2 class="white-text">Project Overview</h2>
-        <p class="aliceblue-text">This project consisted on creating a dashboard that displayed information about bacteria that live inside the human's belly button from a sample of hundreds of people. As it can be seen below, the dashboard visualizes each person's demographic information, top 10 bacteria found, how frequently they wash their belly button, and the bacteria cultures per sample.</p>
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="row bg-dark">
-      <div class="col-md-2 bg-dark">
-        <div class="well bg-dark">
+    
+    <div class="row">
+      <div class="col-md-2">
+          <div class="well">
           <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
-          <div id="sample-metadata" class="panel-body bg-dark"></div>
+          <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5 bg-dark">
+      
+      <div class="col-md-5">
         <div id="bar"></div>
       </div>
-      <div class="col-md-5 bg-dark">
+      <div class="col-md-5">
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 bg-dark">
+      <div class="col-md-12">
         <div id="bubble"></div>
       </div>
     </div>
-    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <!-- <script src="plots.js"></script> -->
-  <script src="js/charts.js"></script>
+  <script src="./JS/charts.js"></script>
+
 
 </body>
 
