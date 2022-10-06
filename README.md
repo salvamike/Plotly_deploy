@@ -8,4 +8,4 @@ In this project we built a web app with dashboards that has 158 anonymous people
 - Belly Button Washing Frequency per Week
 - Bacteria Cultures per Sample
 
-The following link will take to out web app page
+The following link will take to out web app page: https://salvamike.github.io/Plotly_deploy/
